@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(155, 155, 155);
+}
+.modal{
+    display: none;
+    position: fixed;
+    padding-top: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .8);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoom .5s;
+}
+.cerrar{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+div.polaroid{
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
+}
+.text{
+    text-align: center;
+}
+img{
+    width:300px;
+}
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+@media screen and (max-width: 480px){
+    div.polaroid{
+        margin: 5px 0 25px 0;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 760px){
+    div.polaroid{
+        margin: 5px 0 25px 0;
+    }
+    img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 761px){
+    div.polaroid{
+        display: inline-block;
+        margin-left: 6%;
+    }
+}
